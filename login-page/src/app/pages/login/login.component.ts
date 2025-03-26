@@ -37,8 +37,8 @@ export class LoginComponent {
   submit() {
     const formValue = this.loginForm.value
     this.loginService.login(formValue.email, formValue.password).subscribe({
-      next: () => this.toastService.success("Login feito com sucesso!"),
-      error: () => this.toastService.error("Erro inesperado! Tente novamente")
+      next: () => this.toastService.success("Login successful!"),
+      error: () => this.toastService.error("Error! Try again")
     })
   }
 
